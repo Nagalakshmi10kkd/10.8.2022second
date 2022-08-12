@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int res=0,d=1;
+	int rem;
+	int digit,replace,n;
+	printf("enter any value:");
+	scanf("%d",&n);
+    printf("enter the digit:");
+	scanf("%d",&digit);
+	printf("the replacement number:");
+	scanf("%d",&replace);
+	while(n)
+	   {
+	   	rem=n%10;
+	   	if(rem==digit)
+	   	   res=res+replace*d;
+	   	else 
+		   res=res+rem*d;  
+	   	   d=d*10;
+	   	   n=n/10;
+	   }
+	   printf("%d",res);
+}#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int res=0,d=1;
+	int rem;
+	int digit,replace,n;
+	printf("enter any value:");
+	scanf("%d",&n);
+    printf("enter the digit:");
+	scanf("%d",&digit);
+	printf("the replacement number:");
+	scanf("%d",&replace);
+	while(n)
+	   {
+	   	rem=n%10;
+	   	if(rem==digit)
+	   	   res=res+replace*d;
+	   	else 
+		   res=res+rem*d;  
+	   	   d=d*10;
+	   	   n=n/10;
+	   }
+	   printf("%d",res);
+}
